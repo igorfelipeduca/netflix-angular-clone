@@ -26,7 +26,10 @@
         srcset="imagem de usuário"
         class="user-pic"
       />
-      <i-feather name="chevron-down" class="header-icon"></i-feather>
+      <i-feather
+        name="chevron-down"
+        class="header-icon chevron-icon"
+      ></i-feather>
     </div>
   </div>
 </header>
@@ -56,8 +59,24 @@
   </div>
 
   <div class="keep-watching">
+    <h2>Minha lista</h2>
+  </div>
+
+  <div class="keep-watching-list">
+    <div *ngFor="let kw of kwList; index as i">
+      <app-kw-box [kwProps]="kw"></app-kw-box>
+    </div>
+  </div>
+
+  <div class="keep-watching">
     <h2>
       Continuar assistindo como <span>{{ user?.name }}</span>
     </h2>
+  </div>
+
+  <div class="keep-watching-list">
+    <div *ngFor="let kw of kwList; index as i">
+      <app-kw-box [kwProps]="kw"></app-kw-box>
+    </div>
   </div>
 </main>

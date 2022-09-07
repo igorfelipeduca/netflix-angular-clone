@@ -1,0 +1,35 @@
+@import "../../../styles.scss";
+
+.keep-watching-box {
+  img {
+    border-radius: 4px;
+    height: 9rem;
+    width: 16rem;
+  }
+}
+
+.progress-bar-wrapper {
+  display: flex;
+  justify-content: center;
+
+  .meter {
+    box-sizing: content-box;
+    height: 3px; /* Can be anything */
+    position: relative;
+    border-radius: 25px;
+    width: 10rem;
+
+    span {
+      display: block;
+      height: 100%;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      background-color: $primary-color;
+      position: relative;
+      overflow: hidden;
+      margin-top: 0.3rem;
+    }
+  }
+}

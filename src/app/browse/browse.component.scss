@@ -48,16 +48,34 @@
 
       li {
         list-style: none;
+        transition: 0.1s ease-in-out;
+      }
+
+      li:not(.active) {
+        cursor: pointer;
+      }
+
+      li:not(.active):hover {
+        opacity: 0.7;
       }
     }
 
     .active {
       font-weight: 600;
+      cursor: context-menu;
     }
   }
 
   .header-icon {
     color: $light-color;
+  }
+
+  .chevron-icon {
+    transition: 0.2s ease;
+  }
+
+  .chevron-icon:hover {
+    transform: rotate(180deg);
   }
 
   .search-icon {
@@ -125,10 +143,20 @@ main {
       border: none;
       display: flex;
       align-items: center;
+      transition: 0.1s ease-in-out;
+      cursor: pointer;
 
       .button-icon {
         margin-right: 0.5rem;
       }
+    }
+
+    .watch-button:hover {
+      opacity: 0.7;
+    }
+
+    .more-info-button:hover {
+      opacity: 0.7;
     }
 
     .more-info-button {
@@ -142,6 +170,8 @@ main {
       border: none;
       display: flex;
       align-items: center;
+      transition: 0.1s ease-in-out;
+      cursor: pointer;
 
       .button-icon {
         margin-right: 0.5rem;
@@ -157,5 +187,16 @@ main {
     span {
       text-transform: uppercase;
     }
+  }
+
+  .keep-watching-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: -4rem;
+  }
+
+  .keep-watching-list:last-child {
+    margin-bottom: 1rem;
   }
 }

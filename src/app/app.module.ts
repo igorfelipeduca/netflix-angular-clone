@@ -9,6 +9,7 @@ import { UserIconComponent } from './users/user-icon/user-icon.component';
 
 import { FeatherModule } from 'angular-feather';
 import { Search, Bell, ChevronDown, Play, Info } from 'angular-feather/icons';
+import { KwBoxComponent } from './browse/kw-box/kw-box.component';
 
 const icons = {
   Search,
@@ -24,6 +25,7 @@ const icons = {
     UsersComponent,
     BrowseComponent,
     UserIconComponent,
+    KwBoxComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FeatherModule.pick(icons)],
   providers: [],

@@ -1,0 +1,29 @@
+@import "../../../styles.scss";
+
+.user-icon {
+  cursor: pointer;
+
+  img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 6px;
+  }
+
+  .user-name {
+    color: gray;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
+.user-icon:hover {
+  img {
+    border: 4px solid $light-color;
+  }
+
+  .user-name {
+    color: $light-color;
+  }
+}

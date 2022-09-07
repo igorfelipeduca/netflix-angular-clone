@@ -1,0 +1,52 @@
+@import "../../styles.scss";
+
+.netflix-users-header {
+  font-family: "Bebas Neue", cursive;
+  color: $primary-color;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  padding-left: 2.7rem;
+  margin-top: -25px;
+}
+
+.whos-watchin {
+  font-size: 3rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.users-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.manage-profiles {
+  display: flex;
+  justify-content: center;
+
+  button {
+    border: 1px solid gray;
+    background-color: inherit;
+    padding: 10px 25px 10px 25px;
+    color: gray;
+    font-size: 1.2rem;
+    margin-top: 3.2rem;
+    cursor: pointer;
+  }
+}
+
+.manage-profiles button:hover {
+  border: 1px solid $light-color;
+  color: $light-color;
+}

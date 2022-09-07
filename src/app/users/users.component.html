@@ -1,0 +1,21 @@
+<header class="netflix-users-header">
+  <h4>NETFLIX</h4>
+</header>
+
+<main>
+  <div class="whos-watchin">
+    <p>Quem está assistindo?</p>
+  </div>
+
+  <div class="users-list">
+    <div *ngFor="let user of users; index as i">
+      <a routerLink="browse">
+        <app-user-icon [user]="user"></app-user-icon>
+      </a>
+    </div>
+  </div>
+
+  <div class="manage-profiles">
+    <button>Gerenciar perfis</button>
+  </div>
+</main>

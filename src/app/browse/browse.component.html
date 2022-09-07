@@ -1,0 +1,63 @@
+<div class="background"></div>
+
+<header class="netflix-browse-header">
+  <div class="header-nav">
+    <h4 class="netflix-title">NETFLIX</h4>
+
+    <nav class="topics-list">
+      <ul>
+        <li class="active">Início</li>
+        <li>Séries</li>
+        <li>Filmes</li>
+        <li>Bombando</li>
+        <li>Minha lista</li>
+        <li>Navegar por idiomas</li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="icons-wrapper">
+    <i-feather name="search" class="header-icon search-icon"></i-feather>
+
+    <div class="icons">
+      <i-feather name="bell" class="header-icon"></i-feather>
+      <img
+        src="{{ user?.picUrl }}"
+        srcset="imagem de usuário"
+        class="user-pic"
+      />
+      <i-feather name="chevron-down" class="header-icon"></i-feather>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="serie-info-wrapper">
+    <div class="serie-title-img">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1280px-Breaking_Bad_logo.svg.png"
+        alt="breaking bad título"
+      />
+    </div>
+
+    <p>
+      Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo
+      futuro da família, mudando o destino de todos.
+    </p>
+  </div>
+
+  <div class="main-buttons-wrapper">
+    <button class="watch-button">
+      <i-feather name="play" class="button-icon"></i-feather> Assistir
+    </button>
+    <button class="more-info-button">
+      <i-feather name="info" class="button-icon"> </i-feather>Mais informações
+    </button>
+  </div>
+
+  <div class="keep-watching">
+    <h2>
+      Continuar assistindo como <span>{{ user?.name }}</span>
+    </h2>
+  </div>
+</main>

@@ -64,7 +64,9 @@
 
   <div class="keep-watching-list">
     <div *ngFor="let kw of kwList; index as i">
-      <app-kw-box [kwProps]="kw"></app-kw-box>
+      <div *ngIf="kw.name === 'breaking bad'">
+        <app-kw-box [kwProps]="kw"></app-kw-box>
+      </div>
     </div>
   </div>
 
